@@ -1,11 +1,12 @@
-import Page from "@/app/login/page"
+import Router from "@/router";
+import { ThemeProvider } from "@/components/theme-provider"
 
 function App() {
   return (
-    <div>
-      <Page />
-    </div>
+    <ThemeProvider defaultTheme='light' storageKey='vite-ui-theme'>
+      <Router />
+    </ThemeProvider>
   )
 }
 
-export default App
+export default App;
